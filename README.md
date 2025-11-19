@@ -45,9 +45,13 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-2. Run the demo (replace paths as needed):
+2. Run the 🎬 Demo :
 ```bash
-[![Run Demo](https://img.shields.io/badge/Run%20Demo-Click%20Here-brightgreen?style=for-the-badge)](https://github.com/balakram/hybrid-face-recognition-compression)
+[![Run Demo](https://img.shields.io/badge/Run%20Demo-Open%20Notebook-brightgreen?style=for-the-badge)](https://github.com/balakram/hybrid-face-recognition-compression/blob/main/notebooks/demo.ipynb)
+```
+3. 🚀 Run in Google Colab:
+```bash
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/balakram/hybrid-face-recognition-compression/blob/main/notebooks/demo.ipynb)
 
 ```
 
