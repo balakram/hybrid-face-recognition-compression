@@ -47,7 +47,6 @@ pip install -r requirements.txt
 
 2. Run the demo (replace paths as needed):
 ```bash
-## 🎬 Demo
 [![Run Demo](https://img.shields.io/badge/Run%20Demo-Click%20Here-brightgreen?style=for-the-badge)](https://github.com/balakram/hybrid-face-recognition-compression)
 
 ```
