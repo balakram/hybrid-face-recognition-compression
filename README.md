@@ -33,9 +33,43 @@ hybrid-face-recognition-compression/
 │
 ├── data/
 │   ├── raw/
-│   ├── processed/
-│   └── samples/
-│
+│   │   ├── color/
+│   │   |     ├── person1/
+|   |   |     |     |──img_001.jpg
+|   |   |     |     |──img_002.jpg
+|   |   |     |     └── ...
+│   │   |     └─── person1/
+|   |   |           |──img_001.jpg
+|   |   |           |──img_002.jpg
+|   |   |           └─── ...
+│   │   └── gray/
+│   │         ├── person1/
+|   |         |     |──img_001.jpg
+|   |         |     |──img_002.jpg
+|   |         |     └── ...
+│   │         └─── person1/
+|   |               |──img_001.jpg
+|   |               |──img_002.jpg
+|   |               └─── ...
+│   └── processed/
+│          ├── compressed/
+│          |     ├── person1/
+|          |     |     |──img_001.jpg
+|          |     |     |──img_002.jpg
+|          |     |     └── ...
+│          |     └─── person1/
+|          |           |──img_001.jpg
+|          |           |──img_002.jpg
+|          |           └─── ...
+│          └── decompressed/
+│                ├── person1/
+|                |     |──img_001.jpg
+|                |     |──img_002.jpg
+|                |     └── ...
+│                └─── person1/
+|                      |──img_001.jpg
+|                      |──img_002.jpg
+|                      └─── ...
 ├── src/
 │   ├── __init__.py
 │   │
@@ -61,6 +95,11 @@ hybrid-face-recognition-compression/
 │       ├── metrics.py
 │       ├── helpers.py
 │       └── fileio.py
+│
+├── modes/
+│   ├── eigen_model.pkl
+│   ├── fisher_model.pkl
+│   └── model_meta.json
 │
 ├── notebooks/
 │   ├── PCA_demo.ipynb
