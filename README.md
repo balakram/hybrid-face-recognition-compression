@@ -22,7 +22,7 @@ hybrid-face-recognition-compression/
 ├── LICENSE
 ├── .gitignore
 ├── requirements.txt
-├── main.py                     # CLI wrapper (modes: capture, train, recognize,    |                                 compress_gray, decompress, demo)
+├── main.py                     # CLI wrapper (modes: capture, train, recognize,compress_gray, decompress, demo)
 ├── data/
 │
 ├── docs/
@@ -99,7 +99,7 @@ hybrid-face-recognition-compression/
 │       ├── helpers.py
 │       └── fileio.py
 │
-├── modes/ # saved models: pipeline.pkl, eigen_model.pkl, fisher_model.pkl,nn_clf.pkl
+├── modes/                             # saved models: pipeline.pkl, eigen_model.pkl, fisher_model.pkl,nn_clf.pkl
 │   ├── eigen_model.pkl
 │   ├── fisher_model.pkl
 │   └── model_meta.json
