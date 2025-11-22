@@ -88,7 +88,7 @@ hybrid-face-recognition-compression/
     └── test_pipeline.py
 
 ```
-## 
+## PIPELINE
 ```
             ===========================================================
                             HYBRID SYSTEM PIPELINE
