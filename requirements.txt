@@ -1,7 +1,3 @@
-numpy
-scipy
+placeholdernumpy
 opencv-python
-matplotlib
-scikit-learn
 Pillow
-pytest
