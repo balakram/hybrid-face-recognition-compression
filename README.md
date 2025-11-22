@@ -16,25 +16,69 @@ This repository implements a hybrid system that performs face recognition using 
 
 ## Repo Structure
 ```
-FaceRec_Compression_Repo/
-├─ assets/
-│  └─ banner.png
-├─ src/
-│  ├─ __init__.py
-│  ├─ main.py
-│  ├─ pca_eigenfaces.py
-│  ├─ lda_fisherfaces.py
-│  ├─ compression.py
-│  └─ utils.py
-├─ notebooks/
-│  └─ demo.ipynb
-├─ docs/
-│  └─ report.pdf
-├─ tests/
-│  └─ test_pipeline.py
-├─ requirements.txt
-├─ README.md
-└─ LICENSE
+hybrid-face-recognition-compression/
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+├── requirements.txt
+│
+├── docs/
+│   ├── architecture.png
+│   ├── face_recognition_pipeline.png
+│   ├── compression_pipeline.png
+│   ├── combined_flow.png
+│   ├── module_interaction.png
+│   └── project_report.pdf
+│
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── samples/
+│
+├── src/
+│   ├── __init__.py
+│   │
+│   ├── preprocessing/
+│   │   ├── __init__.py
+│   │   └── preprocess.py
+│   │
+│   ├── recognition/
+│   │   ├── __init__.py
+│   │   ├── pca_eigenfaces.py
+│   │   ├── lda_fisherfaces.py
+│   │   └── classifier.py
+│   │
+│   ├── compression/
+│   │   ├── __init__.py
+│   │   ├── dct.py
+│   │   ├── quantization.py
+│   │   ├── zigzag.py
+│   │   └── huffman.py
+│   │
+│   └── utils/
+│       ├── __init__.py
+│       ├── metrics.py
+│       ├── helpers.py
+│       └── fileio.py
+│
+├── notebooks/
+│   ├── PCA_demo.ipynb
+│   ├── LDA_demo.ipynb
+│   └── DCT_Huffman_demo.ipynb
+│
+├── examples/
+│   ├── run_recognition.py
+│   ├── run_compression.py
+│   └── demo_all_in_one.py
+│
+└── tests/
+    ├── test_pca.py
+    ├── test_lda.py
+    ├── test_dct.py
+    ├── test_huffman.py
+    └── test_pipeline.py
+
 ```
 
 ## PIPELINE
