@@ -22,6 +22,8 @@ hybrid-face-recognition-compression/
 ├── LICENSE
 ├── .gitignore
 ├── requirements.txt
+├── main.py                     # CLI wrapper (modes: capture, train, recognize,    |                                 compress_gray, decompress, demo)
+├── data/
 │
 ├── docs/
 │   ├── architecture.png
@@ -32,7 +34,8 @@ hybrid-face-recognition-compression/
 │   └── project_report.pdf
 │
 ├── data/
-│   ├── raw/
+│   ├── raw/                         # captured raw dataset (per-person folder)
+|   |   |<person>/color/gray/
 │   │   ├── color/
 │   │   |     ├── person1/
 |   |   |     |     |──img_001.jpg
@@ -96,7 +99,7 @@ hybrid-face-recognition-compression/
 │       ├── helpers.py
 │       └── fileio.py
 │
-├── modes/
+├── modes/ # saved models: pipeline.pkl, eigen_model.pkl, fisher_model.pkl,nn_clf.pkl
 │   ├── eigen_model.pkl
 │   ├── fisher_model.pkl
 │   └── model_meta.json
